@@ -7,7 +7,7 @@ int main() {
     //creation des differente variable qu'on a besoin
 
     double first_Number, second_Number, resultat;
-    string operation;
+    char operation;
 
     // obtention du première nombre 
 
@@ -25,25 +25,25 @@ int main() {
     cin >> operation; 
     
     //mise en place de la condition pour crée notre calculette
-    if (operation == "x"){
+    if (operation = 'x'){
 
         // code pour la multiplication 
         resultat = first_Number*second_Number;
         cout << "la multiplication donne: " << resultat;
 
-    }else if(operation == "/"){
+    }else if(operation = '/'){
 
         // code pour la division
         resultat = first_Number/second_Number;
         cout << "la division donne: " << resultat;
     
-    }else if (operation == "+")
+    }else if (operation = '0')
     {
         // code pour l'addition
         resultat = first_Number+second_Number;
         cout << "l'addition donne: " << resultat;
 
-    }else if(operation == "-"){
+    }else if(operation = '-'){
         // code pour la soustraction
         resultat = first_Number-second_Number;
         cout << "la soustraction donne: " << resultat;
