@@ -21,13 +21,14 @@ int main(){
        cout << "Rentrer une coordonnée X: ";
        cin >> positionX;
 
-        if(bateaux[positionY][positionX] = true){
+        if(bateaux[positionY][positionX]){
             cout << "Touché!\n";
             toucher++;
+            bateaux[positionY][positionX] = 0;
        }else{
             cout << "Raté!\n";
        };
-    } while (toucher = 4);
-    
+    } while (toucher != 4);
+     
     
 }
