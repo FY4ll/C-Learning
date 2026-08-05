@@ -10,25 +10,26 @@ int main(){
        {0,0,1,0},
        {0,0,1,0} 
     };
-    int toucher; //variable qui vas stocker le nombre de <bateaux> toucher 
+    int toucher = 0; //variable qui vas stocker le nombre de <bateaux> toucher 
     int positionX; // permet d'aller chercher dans notre array bateau l'élément voulu dans une ligne
     int positionY; // permet d'aller chercher dans notre array bateau la ligne qui vas etre utiliser
-    do
+   
+    // tant que toucher reste plus petit que le nombre de 1 deffinie dans l'array le jeux continue
+    while (toucher < 4 )
     {
-        // Récuperation des input utilisateur
-       cout << "Rentrer une coordonnée Y(nombre): ";
-       cin >> positionY;
-       cout << "Rentrer une coordonnée X: ";
-       cin >> positionX;
+            // Récuperation des input utilisateur
+        cout << "Rentrer une coordonnée Y(nombre): ";
+        cin >> positionY;
+        cout << "Rentrer une coordonnée X: ";
+        cin >> positionX;
 
-        if(bateaux[positionY][positionX]){
-            cout << "Touché!\n";
-            toucher++;
-            bateaux[positionY][positionX] = 0;
-       }else{
-            cout << "Raté!\n";
-       };
-    } while (toucher != 4);
-     
-    
+            if(bateaux[positionY][positionX]){
+                cout << "Touché!\n";
+                toucher++;
+                bateaux[positionY][positionX] = 0;
+        }else{
+                cout << "Raté!\n";
+        };
+    } ;
+    cout << "vous avez reussis!";    
 }
