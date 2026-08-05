@@ -22,8 +22,8 @@ int main(){
         cin >> positionY;
         cout << "Rentrer une coordonnée X: ";
         cin >> positionX;
-
-            if(bateaux[positionY][positionX]){
+        // condition affin de verifier si les valeurs inserée indique bien true ou sinon on renvois Raté
+        if(bateaux[positionY][positionX]){
                 cout << "Touché!\n";
                 toucher++;
                 bateaux[positionY][positionX] = 0;
